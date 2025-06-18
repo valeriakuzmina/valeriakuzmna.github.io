@@ -407,6 +407,11 @@ body {
     gap: 20px;
   }
 }
+@media (max-width: 1023px) {
+  .step::after {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .header__container {
     flex-direction: column;
@@ -425,6 +430,9 @@ body {
     align-items: center;
     gap: 40px;
   }
+  .order__fields {
+    gap: 20px;
+  }
   .order__progress {
     flex-direction: column;
   }
@@ -436,6 +444,7 @@ body {
   .order__progress #customRange,
   .order__progress .order__progress-bar {
     max-width: 100%;
+    padding: 0px 30px;
   }
   .footer__container {
     flex-direction: column;
@@ -445,8 +454,7 @@ body {
   .footer__divider {
     display: none;
   }
-  .footer__payments,
-  .footer__contacts {
+  .footer__payments, .footer__contacts {
     flex-direction: column;
     gap: 8px;
   }
@@ -472,9 +480,6 @@ body {
   }
   .footer {
     font-size: 12px;
-  }
-  .step::after {
-    display: none;
   }
 }
 @media (max-width: 320px) {
@@ -524,9 +529,8 @@ body {
     width: 100%;
   }
   .order__progress .order__progress-bar {
-    width: 300px;
-    padding: 0px 20px;
     width: 100%;
+    padding: 0px 20px;
   }
   .order__progress .order__file-label {
     width: 100%;
@@ -548,8 +552,7 @@ body {
   .footer__divider {
     display: none;
   }
-  .footer__payments,
-  .footer__contacts {
+  .footer__payments, .footer__contacts {
     flex-direction: column;
     gap: 6px;
   }
